@@ -1,6 +1,5 @@
 import type { NodeProps } from "reactflow";
 import { Handle, Position } from "reactflow";
-import ThreeDImage from "./ThreeDImage";
 
 export type ImageNodeData = {
   image?: string;

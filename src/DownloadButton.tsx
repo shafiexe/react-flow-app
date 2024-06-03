@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Panel,
   useReactFlow,
@@ -33,13 +32,13 @@ function DownloadButton() {
       2,
     );
 
-    toPng(document.querySelector(".react-flow__viewport"), {
+    toPng(document.querySelector(".react-flow__viewport") as unknown as any, {
       backgroundColor: "#1a365d",
       width: imageWidth,
       height: imageHeight,
       style: {
-        width: imageWidth,
-        height: imageHeight,
+        width: imageWidth as any,
+        height: imageHeight as any,
         transform: `translate(${transform[0]}px, ${transform[1]}px) scale(${transform[2]})`,
       },
     }).then(downloadImage);
