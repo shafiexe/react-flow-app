@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@symphony-ai/central-ds-react": "^1.37.1",
     "@types/three": "^0.164.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
