@@ -22,7 +22,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.AUTH_TOKEN }}" > ~/.npmrc
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build package
         run: npm run build
